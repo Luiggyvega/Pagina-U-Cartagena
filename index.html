@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estrategia pedagógica mediada por TIC y gamificación</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        :root {
+            --primary: #1f3a5f;
+            --secondary: #4a7c59;
+            --light: #f4f6f8;
+            --dark: #1c1c1c;
+            --accent: #c9a227;
+            --card: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+            font-family: "Segoe UI", Tahoma, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.7;
+        }
+
+        /* ================= HEADER ================= */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: linear-gradient(90deg, var(--primary), #16304d);
+            padding: 15px 40px;
+            z-index: 1000;
+            box-shadow: 0 4px 10px rgba(0,0,0,.15);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-left {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .nav-logo {
+            height: 45px;
+        }
+
+        nav h1 {
+            color: white;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent);
+        }
+
+        /* ================= SECTIONS ================= */
+        section {
+            padding: 130px 80px 80px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-card {
+            background: var(--card);
+            padding: 40px;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.08);
+        }
+
+        h2 {
+            color: var(--primary);
+            margin-bottom: 25px;
+            font-size: 30px;
+            border-left: 6px solid var(--accent);
+            padding-left: 15px;
+        }
+
+        h3 {
+            margin-top: 35px;
+            color: var(--secondary);
+        }
+
+        p {
+            text-align: justify;
+            margin-top: 15px;
+        }
+
+        /* ================= INICIO ================= */
+        .inicio-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .nombre {
+            font-size: 26px;
+            font-weight: 700;
+            margin-top: 20px;
+            color: var(--primary);
+        }
+
+        .titulo {
+            font-size: 16px;
+            margin-top: 8px;
+            color: #555;
+        }
+
+        .foto-box img {
+            width: 240px;
+            height: 240px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid var(--secondary);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        /* ================= DESTACADO ================= */
+        .destacado {
+            background: #eef3f7;
+            border-left: 6px solid var(--secondary);
+            padding: 20px;
+            margin-top: 25px;
+            border-radius: 8px;
+            font-weight: 500;
+        }
+
+        /* ================= POSTER ================= */
+        .poster {
+            margin-top: 30px;
+            padding: 35px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #ffffff, #f2f6fa);
+            box-shadow: 0 8px 25px rgba(0,0,0,.1);
+        }
+
+        .poster ul {
+            margin-top: 15px;
+            padding-left: 25px;
+        }
+
+        .poster ul li {
+            margin-bottom: 10px;
+        }
+
+        /* ================= VIDEO ================= */
+        .video-container {
+            margin-top: 30px;
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* ================= FOOTER ================= */
+        footer {
+            background: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 35px;
+            margin-top: 60px;
+        }
+
+        /* ================= RESPONSIVE ================= */
+        @media (max-width: 900px) {
+            .inicio-grid {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            section {
+                padding: 130px 30px 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="nav-left">
+            <img src="./img/logo.jpeg" alt="Logo Universidad" class="nav-logo">
+            <h1>Proyecto Pedagógico</h1>
+        </div>
+
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#identificado">Identificado</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#disenado">Diseñado</a></li>
+            <li><a href="#creditos">Créditos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="inicio">
+    <div class="section-card">
+        <h2>Inicio</h2>
+
+        <h3>
+            Estrategia pedagógica mediada por TIC y gamificación para fortalecer las competencias en inglés de los estudiantes de postprimaria de la Institución Educativa Rural Balsamina, sede Algarrobos
+        </h3>
+
+        <!-- IMAGEN PROFE -->
+        <div style="display:flex; justify-content:center; margin:30px 0;">
+            <img 
+                src="./img/profe.jpeg" 
+                alt="Imagen profesora en contexto educativo"
+                style="
+                    max-width: 500px;
+                    width: 100%;
+                    border-radius: 14px;
+                    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+                    border: 4px solid var(--secondary);
+                ">
+        </div>
+
+        <!-- GRID CON NOMBRE + FOTO PERFIL -->
+        <div class="inicio-grid">
+            <div>
+                <div class="nombre">Yaneth Blanco Ortega</div>
+                <div class="titulo">Licenciada en inglés como lengua extranjera</div>
+            </div>
+
+            <div class="foto-box">
+                <img src="./img/perfil.jpeg" alt="Foto de Yaneth Blanco Ortega">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="identificado">
+    <div class="section-card">
+        <h2>Planteamiento y Formulación del Problema</h2>
+
+        <h3>Planteamiento</h3>
+
+        <p>
+            En el contexto educativo actual, el aprendizaje del inglés se reconoce como una competencia esencial para acceder a oportunidades académicas, laborales y culturales. Sin embargo, en Colombia persisten amplias brechas entre los niveles de dominio del idioma alcanzados por los estudiantes de zonas urbanas y aquellos de zonas rurales.
+        </p>
+
+        <p>
+            Según el Instituto Colombiano para la Evaluación de la Educación – ICFES (2021), la mayoría de los estudiantes colombianos se ubican en los niveles A– y A1 del Marco Común Europeo de Referencia para las Lenguas (MCER), y menos del 10 % logra alcanzar un nivel intermedio (B1 o superior).
+        </p>
+
+        <p>
+            En el departamento de Norte de Santander, los resultados reflejan un panorama aún más crítico, particularmente en las instituciones rurales donde las condiciones sociales, económicas y de conectividad son limitadas.
+        </p>
+
+        <div class="destacado">
+            En la Institución Educativa Rural Balsamina, sede Algarrobos, ubicada en el municipio de San Calixto, se evidencia un bajo nivel de desempeño en el área de inglés, especialmente en los grados de postprimaria.
+        </div>
+
+        <p>
+            Esta situación se relaciona con diversos factores como la ausencia de docentes licenciados en lenguas extranjeras, el uso de metodologías tradicionales centradas en la repetición y memorización, la escasa práctica comunicativa y el acceso limitado a recursos tecnológicos y conectividad.
+        </p>
+
+        <p>
+            De acuerdo con observaciones institucionales y resultados internos, los estudiantes presentan baja participación en clase, dificultades para comprender instrucciones básicas en inglés y un uso mínimo del vocabulario aprendido. Además, muchos alumnos no perciben la utilidad del idioma en su contexto rural, lo que genera apatía y bajo interés por su aprendizaje.
+        </p>
+
+        <p>
+            Esta situación repercute directamente en el logro de los estándares básicos de competencia propuestos por el Ministerio de Educación Nacional (MEN, 2016) y limita las posibilidades de los estudiantes para continuar estudios superiores o acceder a empleos que exigen conocimientos básicos de inglés.
+        </p>
+    </div>
+</section>
+
+<section id="video">
+    <div class="section-card">
+        <h2>Video de Presentación del Proyecto</h2>
+
+        <p>
+            En esta sección se presenta un video explicativo relacionado con la estrategia pedagógica propuesta. Para cambiar el video, únicamente debes reemplazar el enlace de YouTube dentro del iframe.
+        </p>
+
+        <div class="video-container">
+            <!-- SOLO CAMBIA EL ENLACE -->
+            <iframe 
+                src="https://www.youtube.com/embed/ENLACE_DEL_VIDEO"
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<section id="disenado">
+    <div class="section-card">
+        <h2>Póster: Justificación y Objetivos</h2>
+
+        <div class="poster">
+            <h3>Objetivo General</h3>
+            <p>
+                Diseñar e implementar una estrategia pedagógica mediada por TIC y elementos de gamificación para fortalecer las competencias en inglés de los estudiantes de postprimaria de la Institución Educativa Rural Balsamina, sede Algarrobos.
+            </p>
+
+            <h3>Objetivos Específicos</h3>
+            <ul>
+                <li>Diagnosticar el nivel de competencia en inglés de los estudiantes.</li>
+                <li>Diseñar una estrategia pedagógica mediada por TIC y gamificación.</li>
+                <li>Implementar actividades gamificadas en el aula.</li>
+                <li>Evaluar el impacto de la estrategia implementada.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section id="creditos">
+    <div class="section-card">
+        <h2>Créditos</h2>
+        <p>
+            Proyecto desarrollado por Yaneth Blanco Ortega, en el marco de procesos de investigación educativa orientados al fortalecimiento de las competencias en inglés en contextos rurales, alineado con las políticas del Ministerio de Educación Nacional.
+        </p>
+    </div>
+</section>
+
+<footer>
+    © 2026 – Proyecto académico | Institución Educativa Rural Balsamina
+</footer>
+
+</body>
+</html>
+
