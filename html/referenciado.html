@@ -209,6 +209,58 @@
                 padding: 130px 30px 60px;
             }
         }
+        .recursos-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 30px;
+        align-items: stretch;
+    }
+
+    .recurso-card {
+        background: linear-gradient(135deg, #ffffff, #f1f5f9);
+        padding: 30px;
+        border-radius: 14px;
+        box-shadow: 0 10px 25px rgba(0,0,0,.08);
+        border-left: 6px solid var(--secondary);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .recurso-card h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: var(--primary);
+    }
+
+    .recurso-card p {
+        margin-bottom: 20px;
+    }
+
+    .btn-recurso {
+        display: inline-block;
+        background: var(--secondary);
+        color: white;
+        padding: 12px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        text-align: center;
+        transition: all .3s ease;
+        width: fit-content;
+    }
+
+    .btn-recurso:hover {
+        background: var(--primary);
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 900px) {
+        .recursos-grid {
+            grid-template-columns: 1fr;
+        }
+    }
     </style>
 </head>
 <body>
@@ -221,66 +273,66 @@
 
         <ul>
             <li><a href="/index.html">Inicio</a></li>
-            <li><a href="./referenciado.html">Referenciando</a></li>
             <li><a href="./identificado.html">Identificado</a></li>
+            <li><a href="./referenciado.html">Referenciando</a></li>
             <li><a href="./diseñado.html">Diseñado</a></li>
             <li><a href="./creditos.html">Créditos</a></li>
         </ul>
     </nav>
 </header>
-<section id="video">
+<section id="recursos">
     <div class="section-card">
-        <h2>Presentación personal</h2>
-        <p>Acá les quiero hablar un poco sobre mi.</p>
+        <h2>Recursos Multimedia del Proyecto</h2>
 
-        <div class="video-container">
-            <iframe
-                src="https://www.youtube.com/embed/j5vvq8L9Vos"
-                title="Video de presentación"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</section>
-<section id="video">
-    <div class="section-card">
-        <h2>Planteamiento del problema</h2>
-        <p>Mi presentación de la problemática sede Algarrobos</p>
+        <p>
+            En esta sección se presentan los recursos digitales que complementan la estrategia pedagógica,
+            permitiendo una comprensión más clara de los conceptos abordados y facilitando el aprendizaje
+            mediante el uso de herramientas TIC.
+        </p>
 
-        <div class="video-container">
-            <iframe
-                src="https://www.youtube.com/embed/gFs08T0ujYg"
-                title="Planteamiento del problema"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-        </div>
-    </div>
-</section>
+        <div class="recursos-grid">
 
+            <!-- VIDEO -->
+            <div class="recurso-card">
+                <div>
+                    <h3>Video explicativo del proyecto</h3>
+                    <p>
+                        A continuación se presenta un video donde se explica de manera clara el propósito,
+                        enfoque pedagógico y uso de la gamificación como estrategia mediada por TIC.
+                    </p>
 
-
-<section id="disenado">
-    <div class="section-card">
-        <h2>Póster: Justificación y Objetivos</h2>
-
-        <div class="poster">
-            <div style="display:flex; justify-content:center; margin:30px 0;">
-            <img 
-                src="../img/poster.jpeg" 
-                alt="Imagen profesora en contexto educativo"
-                style="
-                    max-width: 600px;
-                    width: 100%;
-                    border-radius: 14px;
-                    box-shadow: 0 10px 30px rgba(0,0,0,.2);
-                    border: 4px solid var(--secondary);
-                ">
+                    <div class="video-container">
+                        <iframe 
+                            src="https://www.youtube.com/embed/fz4qEW_V7ig"
+                            title="Video del proyecto"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
             </div>
+
+            <!-- LIBRO DIGITAL -->
+            <div class="recurso-card">
+                <div>
+                    <h3>Libro digital interactivo</h3>
+                    <p>
+                        Este libro digital contiene la fundamentación teórica, actividades y recursos
+                        didácticos del proyecto pedagógico, permitiendo una navegación interactiva
+                        y dinámica.
+                    </p>
+                </div>
+
+                <a 
+                    href="https://heyzine.com/flip-book/893e680f36.html" 
+                    target="_blank" 
+                    class="btn-recurso">
+                    📘 Ver libro digital
+                </a>
+            </div>
+
         </div>
     </div>
 </section>
+
+
 </body>
