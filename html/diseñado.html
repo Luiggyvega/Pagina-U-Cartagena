@@ -209,6 +209,51 @@
                 padding: 130px 30px 60px;
             }
         }
+        /* =============== UNIDAD DIDACTICA =============== */
+    .unidad-card {
+        margin-top: 30px;
+        padding: 35px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #ffffff, #eef3f7);
+        box-shadow: 0 10px 25px rgba(0,0,0,.08);
+        border-left: 6px solid var(--accent);
+        transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .unidad-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 15px 35px rgba(0,0,0,.12);
+    }
+
+    .unidad-texto h3 {
+        color: var(--primary);
+        margin-bottom: 12px;
+    }
+
+    .unidad-texto p {
+        margin-bottom: 22px;
+    }
+    /* ============ CONTENIDO GENERAL SECCIONES ============ */
+    .contenido-card {
+        margin-top: 10px;
+        padding: 30px;
+        border-radius: 14px;
+        background: linear-gradient(135deg, #ffffff, #f2f6fa);
+        box-shadow: 0 8px 25px rgba(0,0,0,.08);
+        border-left: 6px solid var(--secondary);
+        transition: all .3s ease;
+    }
+
+    .contenido-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    }
+
+    .contenido-card h3 {
+        color: var(--primary);
+        margin-bottom: 12px;
+    }
+        
     </style>
 </head>
 <body>
@@ -219,7 +264,7 @@
             <h1>Proyecto Pedagógico</h1>
         </div>
 
-       <ul>
+        <ul>
             <li><a href="/index.html">Inicio</a></li>
             <li><a href="./identificado.html">Identificado</a></li>
             <li><a href="./referenciado.html">Referenciando</a></li>
@@ -228,4 +273,97 @@
         </ul>
     </nav>
 </header>
+<section id="unidad-didactica">
+    <div class="section-card">
+        <h2>Unidad Didáctica</h2>
+
+        <p>
+            La unidad didáctica presentada a continuación estructura la experiencia de aprendizaje,
+            integrando estrategias pedagógicas mediadas por TIC y elementos de gamificación para
+            fortalecer el proceso educativo.
+        </p>
+
+        <div class="unidad-card">
+            <div class="unidad-texto">
+                <h3>Secuencia Didáctica Interactiva</h3>
+                <p>
+                    Este recurso ha sido diseñado en Genially y presenta de manera visual e interactiva
+                    los objetivos, actividades, recursos y evaluación de la unidad didáctica.
+                </p>
+
+                <a 
+                    href="https://view.genially.com/6987ec6ef2e439bab1994fb3/learning-experience-didactic-unit-secuencia-didactica-secundaria-yaneth-blanco-ortega"
+                    target="_blank"
+                    class="btn-recurso">
+                    📚 Ver unidad didáctica
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="metodologia">
+    <div class="section-card">
+        <h2>Metodología</h2>
+
+        <div class="contenido-card">
+            <h3>Enfoque metodológico</h3>
+            <p>
+                La metodología utilizada en el desarrollo de este proyecto se fundamenta en un enfoque
+                activo y participativo, centrado en el estudiante, donde se promueve el aprendizaje
+                significativo mediante el uso de las Tecnologías de la Información y la Comunicación (TIC)
+                y estrategias de gamificación.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="diseno-instruccional">
+    <div class="section-card">
+        <h2>Diseño Instruccional</h2>
+
+        <div class="contenido-card">
+            <h3>Estructura del diseño</h3>
+            <p>
+                El diseño instruccional se organizó de manera secuencial, estableciendo objetivos claros,
+                actividades progresivas, recursos digitales y criterios de evaluación, garantizando la
+                coherencia entre los contenidos y las competencias a desarrollar.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="producto-final">
+    <div class="section-card">
+        <h2>Producto Final</h2>
+
+        <div class="contenido-card">
+            <h3>Resultado del proyecto</h3>
+            <p>
+                El producto final corresponde a un recurso educativo digital que integra contenidos
+                teóricos, actividades interactivas y elementos de gamificación, diseñado para apoyar
+                el proceso de enseñanza-aprendizaje de manera dinámica y accesible.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="video-tutorial">
+    <div class="section-card">
+        <h2>Video Tutorial</h2>
+
+        <div class="contenido-card">
+            <h3>Guía audiovisual</h3>
+            <p>
+                En el siguiente video tutorial se explica el funcionamiento del recurso educativo,
+                así como las instrucciones necesarias para su correcta implementación dentro del
+                contexto educativo.
+            </p>
+
+            <a href="#" class="btn-recurso">
+                ▶ Ver video tutorial
+            </a>
+        </div>
+    </div>
+</section>
+
 </body>
