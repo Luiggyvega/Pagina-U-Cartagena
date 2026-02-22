@@ -253,7 +253,87 @@
         color: var(--primary);
         margin-bottom: 12px;
     }
-        
+
+     /* ========== CANVA CARD ========== */
+    .canva-card {
+        margin-top: 25px;
+        padding: 25px;
+        background: #ffffff;
+        border-radius: 12px;
+        border-left: 6px solid var(--accent);
+        box-shadow: 0 8px 22px rgba(0,0,0,.08);
+        transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .canva-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    }
+
+    .canva-card h4 {
+        color: var(--primary);
+        margin-bottom: 10px;
+    }
+
+    .canva-card p {
+        margin-bottom: 18px;
+        color: #444;
+    }
+
+    .btn-recurso {
+        background: var(--secondary);
+        color: #fff;
+        padding: 10px 18px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background .3s ease;
+    }
+
+    .btn-recurso:hover {
+        background: var(--primary);
+    }   
+    /* =============== GENIALLY LINK CARD =============== */
+    .genially-link-card {
+        margin-top: 25px;
+        padding: 24px;
+        background: linear-gradient(135deg, #ffffff, #eef3f7);
+        border-radius: 12px;
+        border-left: 6px solid var(--secondary);
+        box-shadow: 0 8px 22px rgba(0,0,0,.08);
+        transition: transform .3s ease, box-shadow .3s ease;
+    }
+
+    .genially-link-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    }
+
+    .genially-link-card h4 {
+        color: var(--primary);
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+
+    .genially-link-card p {
+        margin-bottom: 18px;
+        color: #444;
+    }
+
+    .btn-recurso {
+        background: var(--secondary);
+        color: #fff;
+        padding: 10px 18px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        display: inline-block;
+        transition: background .3s ease;
+    }
+
+    .btn-recurso:hover {
+        background: var(--primary);
+    }
     </style>
 </head>
 <body>
@@ -301,6 +381,7 @@
         </div>
     </div>
 </section>
+
 <section id="metodologia">
     <div class="section-card">
         <h2>Metodología</h2>
@@ -313,6 +394,21 @@
                 significativo mediante el uso de las Tecnologías de la Información y la Comunicación (TIC)
                 y estrategias de gamificación.
             </p>
+
+            <!-- CANVA RECURSO -->
+            <div class="canva-card">
+                <h4>Diseño explicativo en Canva</h4>
+                <p>
+                    Puedes ver el diseño completo creado en Canva, el cual presenta de forma visual
+                    el enfoque metodológico, actividades y guías del proceso pedagógico.
+                </p>
+                <a 
+                    href="https://www.canva.com/design/DAHB-8jpwYM/lb4k5u0DzRyYgFMmqN5AJg/watch?utm_content=DAHB-8jpwYM&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h02189463b0"
+                    target="_blank"
+                    class="btn-recurso">
+                    🎨 Ver en Canva
+                </a>
+            </div>
         </div>
     </div>
 </section>
@@ -328,6 +424,22 @@
                 actividades progresivas, recursos digitales y criterios de evaluación, garantizando la
                 coherencia entre los contenidos y las competencias a desarrollar.
             </p>
+
+            <!-- RECURSO GENIALLY -->
+            <div class="genially-link-card">
+                <h4>Diseño Instruccional Interactivo</h4>
+                <p>
+                    Explora el contenido interactivo del diseño instruccional, el cual detalla cada
+                    fase del proceso de enseñanza-aprendizaje estructurado para el proyecto.
+                </p>
+                <a 
+                    href="https://view.genially.com/699a1f8541bd5d7105975a68/interactive-content-diseno-instruccional"
+                    target="_blank"
+                    class="btn-recurso">
+                    📌 Ver diseño instruccional
+                </a>
+            </div>
+
         </div>
     </div>
 </section>
