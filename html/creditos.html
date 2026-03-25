@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Estrategia pedagógica mediada por TIC y gamificación</title>
@@ -37,7 +38,7 @@
             background: linear-gradient(90deg, var(--primary), #16304d);
             padding: 15px 40px;
             z-index: 1000;
-            box-shadow: 0 4px 10px rgba(0,0,0,.15);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, .15);
         }
 
         nav {
@@ -89,7 +90,7 @@
             background: var(--card);
             padding: 40px;
             border-radius: 14px;
-            box-shadow: 0 10px 30px rgba(0,0,0,.08);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
         }
 
         h2 {
@@ -157,7 +158,7 @@
             padding: 35px;
             border-radius: 12px;
             background: linear-gradient(135deg, #ffffff, #f2f6fa);
-            box-shadow: 0 8px 25px rgba(0,0,0,.1);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, .1);
         }
 
         .poster ul {
@@ -177,7 +178,7 @@
             height: 0;
             overflow: hidden;
             border-radius: 12px;
-            box-shadow: 0 10px 30px rgba(0,0,0,.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
         }
 
         .video-container iframe {
@@ -209,23 +210,117 @@
                 padding: 130px 30px 60px;
             }
         }
+        /* ========== HERRAMIENTAS ========== */
+    .herramientas-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .herramienta-card {
+        background: linear-gradient(135deg, #ffffff, #f2f6fa);
+        padding: 30px;
+        border-radius: 12px;
+        box-shadow: 0 8px 25px rgba(0,0,0,.08);
+        border-left: 6px solid var(--secondary);
+        transition: all .3s ease;
+    }
+
+    .herramienta-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 30px rgba(0,0,0,.12);
+    }
+
+    .herramienta-card h3 {
+        margin-top: 0;
+        color: var(--primary);
+    }
+
+    .herramienta-card p {
+        margin-bottom: 20px;
+    }
+
+    .btn-recurso {
+        display: inline-block;
+        background: var(--secondary);
+        color: white;
+        padding: 10px 18px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all .3s ease;
+    }
+
+    .btn-recurso:hover {
+        background: var(--primary);
+    }
+
+    @media (max-width: 900px) {
+        .herramientas-grid {
+            grid-template-columns: 1fr;
+        }
+    }
     </style>
 </head>
-<body>
-   <header>
-    <nav>
-        <div class="nav-left">
-            <img src="../img/logo.jpeg" alt="Logo Universidad" class="nav-logo">
-            <h1>Proyecto Pedagógico</h1>
-        </div>
 
-       <ul>
-            <li><a href="/index.html">Inicio</a></li>
-            <li><a href="./identificado.html">Identificado</a></li>
-            <li><a href="./referenciado.html">Referenciando</a></li>
-            <li><a href="./diseñado.html">Diseñado</a></li>
-            <li><a href="./creditos.html">Créditos</a></li>
-        </ul>
-    </nav>
-</header>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <img src="../img/logo.jpeg" alt="Logo Universidad" class="nav-logo">
+                <h1>Proyecto Pedagógico</h1>
+            </div>
+
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="./identificado.html">Identificado</a></li>
+                <li><a href="./referenciado.html">Referenciando</a></li>
+                <li><a href="./diseñado.html">Diseñado</a></li>
+                <li><a href="./creditos.html">Créditos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="herramientas">
+        <div class="section-card">
+            <h2>Herramientas Digitales</h2>
+
+            <p>
+                A continuación se presentan algunas herramientas digitales utilizadas en el desarrollo
+                del proyecto pedagógico, las cuales permiten la creación de contenidos interactivos
+                y el fortalecimiento del aprendizaje mediado por TIC.
+            </p>
+
+            <div class="herramientas-grid">
+
+                <!-- GENIALLY -->
+                <div class="herramienta-card">
+                    <h3>Genially</h3>
+                    <p>
+                        Plataforma interactiva utilizada para la creación de contenidos dinámicos,
+                        presentaciones y recursos educativos digitales.
+                    </p>
+
+                    <a href="https://app.genially.com/teams/68fc3ba49c93db71898bb60d/spaces/68fc3ba49c93db71898bb627/templates/home"
+                        target="_blank" class="btn-recurso">
+                        🌐 Ir a Genially
+                    </a>
+                </div>
+
+                <!-- CANVA -->
+                <div class="herramienta-card">
+                    <h3>Canva</h3>
+                    <p>
+                        Herramienta de diseño gráfico utilizada para la creación de presentaciones,
+                        materiales visuales y recursos educativos atractivos.
+                    </p>
+
+                    <a href="https://www.canva.com/download/windows/" target="_blank" class="btn-recurso">
+                        🎨 Descargar Canva
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
 </body>
